@@ -76,3 +76,16 @@ This repository is maintained using automated tools for:
 - Problem analysis and complexity calculation
 
 The automation scripts are kept in a separate repository to keep this collection focused on the actual LeetCode solutions and documentation.
+
+##  Workflow
+
+1. **Create Problem Folder**: `problems/{number} - {name}/`
+2. **Add Java Solution**: Create `Solution.java` with your implementation
+3. **Generate Documentation**: Use automation tools to create:
+   - `Solution.py` (Python version)
+   - `Solution.ts` (TypeScript version)
+   - `explanation.json` (Problem analysis)
+   - `README.md` (Formatted documentation)
+   - `tests/` (Complete test suite)
+4. **Test Solutions**: Run tests to verify all implementations work
+5. **Commit Changes**: Add to version control
