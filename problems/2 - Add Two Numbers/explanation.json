@@ -1,0 +1,39 @@
+{
+  "problem": "I need to add two numbers represented as linked lists, where each node's value is a digit. The result should also be a linked list representing the sum of the input numbers. I must handle carry values when adding digits.",
+  "idea": "To solve this problem, I'll traverse both linked lists simultaneously, keeping track of any carry value that arises from adding digits. For each pair of nodes, I'll calculate their sum and create a new node with the least significant digit (i.e., the remainder when divided by 10). If there's a carry, I'll add it to the next iteration. Finally, if there's still a carry after traversing both lists, I'll create one more node for it.",
+  "complexity": {
+    "time": "O(n + m)",
+    "space": "O(n + m)"
+  },
+  "examples": [
+    {
+      "input": "[2,4,3], [5,6,4]",
+      "output": "[7,0,8]",
+      "explanation": "The sum of 342 and 465 is 807, which is represented as the linked list [7,0,8]."
+    },
+    {
+      "input": "[0], [0]",
+      "output": "[0]",
+      "explanation": "The sum of two zeros is zero."
+    },
+    {
+      "input": "[9,9,9,9,9,9,9], [9,9,9,9]",
+      "output": "[8,9,9,9,0,0,0,1]",
+      "explanation": "The sum of 99999999 and 9999 is 100000098."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in each linked list is in the range [1, 100].",
+    "0 <= Node.val <= 9",
+    "It is guaranteed that the list represents a number that does not have leading zeros."
+  ],
+  "metadata": {
+    "problemNumber": "2",
+    "model": "llama3.1:latest",
+    "jsonValidationSuccess": true,
+    "problemName": "Add Two Numbers",
+    "problemType": "Linked List Addition",
+    "problemUrl": "https://leetcode.com/problems/add-two-numbers/",
+    "generatedAt": "2025-09-12T21:16:32Z"
+  }
+}
