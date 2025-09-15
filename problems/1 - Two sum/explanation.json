@@ -1,0 +1,40 @@
+{
+  "problem": "Given an array of integers and a target sum, I need to find two elements in the array that add up to the target. The function should return their indices.",
+  "idea": "My code uses a brute-force approach with nested loops to compare each pair of elements in the array. For each element at index i, it checks if there is another element at index j (where j > i) such that their sum equals the target. If a match is found, it stores the indices and returns them. This process continues until all pairs have been checked.",
+  "complexity": {
+    "time": "O(n^2)",
+    "space": "O(1)"
+  },
+  "examples": [
+    {
+      "input": "[2,7,11,15], target = 9",
+      "output": "[0,1]",
+      "explanation": "The function returns the indices of the elements at positions 0 and 1 because their sum is equal to the target."
+    },
+    {
+      "input": "[3,2,4], target = 6",
+      "output": "[1,2]",
+      "explanation": "The function returns the indices of the elements at positions 1 and 2 because their sum is equal to the target."
+    },
+    {
+      "input": "[3,3], target = 6",
+      "output": "[0,1]",
+      "explanation": "The function returns the indices of the elements at positions 0 and 1 because their sum is equal to the target."
+    }
+  ],
+  "constraints": [
+    "-10^9 <= nums[i] <= 10^9",
+    "-10^9 <= target <= 10^9",
+    "2 <= nums.length <= 10^4",
+    "Only one valid answer exists."
+  ],
+  "metadata": {
+    "generatedAt": "2025-09-13T18:43:45Z",
+    "jsonValidationSuccess": true,
+    "model": "llama3.1:latest",
+    "problemName": "Two Sum",
+    "problemNumber": "1",
+    "problemUrl": "https://leetcode.com/problems/two-sum/",
+    "problemType": "Two Sum"
+  }
+}

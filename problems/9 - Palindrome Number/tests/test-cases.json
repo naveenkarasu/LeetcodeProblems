@@ -1,0 +1,46 @@
+{
+  "problem": "Palindrome Number",
+  "description": "Determine whether an integer is a palindrome.",
+  "testCases": [
+    {
+      "name": "Example 1",
+      "input": {
+        "x": 121
+      },
+      "expected": true,
+      "description": "A number that reads the same backward as forward."
+    },
+    {
+      "name": "Example 2",
+      "input": {
+        "x": -121
+      },
+      "expected": false,
+      "description": "A negative number is not a palindrome."
+    },
+    {
+      "name": "Edge Case 1",
+      "input": {
+        "x": 0
+      },
+      "expected": true,
+      "description": "Zero is considered a palindrome."
+    },
+    {
+      "name": "Boundary Condition 1",
+      "input": {
+        "x": 10
+      },
+      "expected": false,
+      "description": "A single digit number that is not a palindrome."
+    },
+    {
+      "name": "Stress Test",
+      "input": {
+        "x": 123456789
+      },
+      "expected": false,
+      "description": "A large positive integer that is not a palindrome."
+    }
+  ]
+}

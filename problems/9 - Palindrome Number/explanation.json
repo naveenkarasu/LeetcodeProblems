@@ -1,0 +1,38 @@
+{
+  "problem": "Given an integer, determine whether it is a palindrome number. A palindrome number reads the same backward as forward.",
+  "idea": "To solve this problem, we first check if the input number is negative or zero, in which case it cannot be a palindrome. Then, we convert the absolute value of the number to a string by repeatedly taking the last digit and appending it to the front of the result. Finally, we compare the original number with its reverse; if they are equal, then the number is a palindrome.",
+  "complexity": {
+    "time": "O(log n)",
+    "space": "O(1)"
+  },
+  "examples": [
+    {
+      "input": "121",
+      "output": "true",
+      "explanation": "The number 121 reads as 121 from left to right and from right to left."
+    },
+    {
+      "input": "-121",
+      "output": "false",
+      "explanation": "From left to right, it reads -121. From right to left, it becomes 121-, therefore it is not a palindrome."
+    },
+    {
+      "input": "10",
+      "output": "false",
+      "explanation": "Reads 01 from right to left. Therefore it is not a palindrome."
+    }
+  ],
+  "constraints": [
+    "-2^31 <= x <= 2^31 - 1",
+    "Follow up: Could you solve it without converting the integer to a string?"
+  ],
+  "metadata": {
+    "generatedAt": "2025-09-13T16:38:55Z",
+    "jsonValidationSuccess": true,
+    "model": "llama3.1:latest",
+    "problemName": "Palindrome Number",
+    "problemNumber": "9",
+    "problemUrl": "https://leetcode.com/problems/palindrome-number/",
+    "problemType": "General Problem"
+  }
+}

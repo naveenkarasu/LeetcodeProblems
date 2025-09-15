@@ -1,55 +1,78 @@
-# 🧠 LeetCode Problem Solutions Template
+# LeetCode Problems Collection
 
-This repository is designed as a **template** to help you consistently structure, solve, and document LeetCode problems using Markdown and code files.
+This repository contains my solutions to LeetCode problems with support for multiple programming languages (Java, Python, TypeScript) and comprehensive documentation.
 
-It includes:
-- ✅ A reusable Markdown template to write clear problem descriptions, examples, and solution approaches.
-- 📂 Organized folder structure per problem.
-- 🧮 Space for solutions in Python, Java, or any preferred language.
-- 📌 Ready to clone for daily challenges, contests, or interview prep.
+## 📁 Project Structure
 
-
-
-## 📁 Folder Structure
 ```
-leetcode-solutions/
-├── .github/
-│ └── leetcode_problem_template.md # Markdown template for new problems
-├── problems/
-│ └── <problem-name>/
-│
+LeetcodeProblems/
+├── problems/                   # LeetCode problem solutions
+│   └── {number} - {name}/      # Individual problem folders
+│       ├── Solution.java       # Java solution (primary)
+│       ├── Solution.py         # Python solution
+│       ├── Solution.ts         # TypeScript solution
+│       ├── explanation.json    # Problem explanation and analysis
+│       ├── README.md           # Problem documentation
+│       └── tests/              # Test suite for all languages
+└── README.md                   # This file
 ```
 
+## 🚀 Quick Start
 
-## 📝 How to Use
+### Prerequisites
+- Java JDK 11+ (for Java solutions)
+- Python 3.7+ (for Python solutions)
+- Node.js 18+ and TypeScript (for TypeScript solutions)
 
-1. Clone this repository **using the template button**.
-2. Create a new folder under `problems/` named after the LeetCode problem (e.g., `two-sum`).
-3. Copy `.github/leetcode_problem_template.md` into that folder and rename appropriately.
-4. Add your code in a `.py`, `.cpp`, `.java`, etc. file.
-5. Commit and push!
+### Viewing Solutions
 
+Each problem folder contains:
+- **Solution.java** - Primary Java implementation
+- **Solution.py** - Python implementation
+- **Solution.ts** - TypeScript implementation
+- **README.md** - Detailed problem documentation with examples
+- **explanation.json** - Problem analysis and complexity breakdown
+- **tests/** - Comprehensive test suite for all languages
 
+## 🧪 Testing
 
-## 🧪 Example Problem Folder
+Each problem folder contains a `tests/` directory with:
+- `test-cases.json` - Language-agnostic test cases
+- `TestSolution.java` - Java test wrapper
+- `test_solution.py` - Python test wrapper
+- `test_solution.ts` - TypeScript test wrapper
+- `test-runner.ps1` - Generic test runner
+- `package.json` - TypeScript dependencies
+
+To run tests:
+```powershell
+cd "problems\1 - Two sum\tests"
+npm install
+.\test-runner.ps1 -Language "all"
 ```
-problems/
-└── 1-problem-name/
-```
 
-## 💡 Why Use This?
+## 🔧 Features
 
-- Keep your practice organized and searchable
-- Write clean explanations for future reference
-- Build a public portfolio of your problem-solving skills
-- Easy to reuse for daily or weekly problem-solving
+- **Multi-Language Support**: Solutions in Java, Python, and TypeScript
+- **Comprehensive Documentation**: Detailed README with examples and explanations
+- **Automated Testing**: Language-agnostic test suite for all implementations
+- **Problem Analysis**: Complexity analysis and approach explanations
+- **Consistent Structure**: Standardized format across all problems
 
+## 📝 Problem Examples
 
+### Two Sum (Problem #1)
+- **Java**: `problems/1 - Two sum/Solution.java`
+- **Python**: `problems/1 - Two sum/Solution.py`
+- **TypeScript**: `problems/1 - Two sum/Solution.ts`
+- **Documentation**: `problems/1 - Two sum/README.md`
 
-## 📌 Tip
+## 🤖 Automation Note
 
-Pin this repository and mark it as a **template** so you can reuse it easily in future projects.
+This repository is maintained using automated tools for:
+- Code conversion between languages
+- Documentation generation
+- Test case creation
+- Problem analysis and complexity calculation
 
-
-
-Happy Coding! 🚀
+The automation scripts are kept in a separate repository to keep this collection focused on the actual LeetCode solutions and documentation.
